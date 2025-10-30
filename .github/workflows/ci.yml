@@ -6,6 +6,11 @@ on:
     branches: [main]
     tags: ['*']
 
+    permissions:
+  contents: read
+  packages: write
+  id-token: write
+
 jobs:
   ci:
     runs-on: ubuntu-latest
